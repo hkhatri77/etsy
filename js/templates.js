@@ -1,10 +1,10 @@
 export var toolbar = () => ` < div class = "toolbar" >
-    < a href = "#" >HIPSEARCH< /a> < form >
+    < a href = "#" >HannahsEtsy< /a> < form >
     < input type = "search" >
     < /form> < /div>`
 
 export var grid_item = (url, title) => `<a href="#">
-            <img src="${url}">
+            <img src="${https://openapi.etsy.com/v2/private/listings/{listing_id}/images/{listing_image_id}">
             <div>
                 <span>${title}</span>
                 <span>${price}</span>
@@ -12,7 +12,7 @@ export var grid_item = (url, title) => `<a href="#">
         </a>`
 
 export var details => () => `<a href="#">
-            <img src="${url}">
+            <img src="${https://openapi.etsy.com/v2/private/listings/{listing_id}/images/{listing_image_id}">
             <div>
                 <span>${title}</span>
             </div>
@@ -25,14 +25,14 @@ export var home => () => ` < div class = "container" >
     } < div class = "grid grid-2-400 grid-4-800" >
     $ {
         img.map((v) => {
-            return `<a href="#">
-                <img src="http://cogdellphotography.com/blog/wp-content/uploads/2012/05/JBC_0051.jpg">
+            return `<a href="#details/${v.id}">
+                <img src="${https://openapi.etsy.com/v2/private/listings/{listing_id}/images/{listing_image_id}">
                 <div>
                     <span>${v.url}</span>
                     <span>${v.title}</span></div>
             </a>`
 
         }).join('')}
-        
+
 		< /div> 
      < /div>`
