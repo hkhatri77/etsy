@@ -1,7 +1,5 @@
-
 @import "../bower_components/normalize-css/normalize.css";
 @import "../bower_components/typeplate-starter-kit/css/typeplate.css";
-
 /**
  * BOX-SIZING
  */
@@ -11,7 +9,6 @@
 *:after {
     box-sizing: border-box;
 }
-
 /**
  * GRIDS
  */
@@ -37,7 +34,9 @@
     }
 }
 
-@define-mixin gridify $col, $width, $gutter: 2 {
+@define-mixin gridify $col,
+$width,
+$gutter: 2 {
     @media only screen and (min-width: $(width)px) {
         .grid-$(col)-$(width) {
             & > * {
@@ -48,9 +47,11 @@
     }
 }
 
-@mixin gridify 2, 400 {}
-@mixin gridify 4, 600 {}
+@mixin gridify 2,
+400 {}
 
+@mixin gridify 4,
+800 {}
 /**
  * PACE (automatic pre-loader thingy)
  */
@@ -88,3 +89,14 @@ img {
 /**
  * YOUR CODE HERE
  */
+
+.toolbar {
+    width: 100%;
+    background-color: grey;
+    margin-bottom: 10px;
+    height: 80px;
+}
+
+input{
+    float: right;
+}
