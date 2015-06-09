@@ -21,7 +21,7 @@ var EtsyRouter = Backbone.Router.extend({
 	},
 	home: function(){
 
-		api.getListings().then((json)=> {
+		api.getShowEtsyListing().then((json)=> {
 		document.body.innerHTML= templates.home(json.results)
 		})
 	},
@@ -49,3 +49,4 @@ $('body').on('submit', 'form', (event) => {
     event.preventDefault();
 	window.location.hash = `search/${document.querySelector(".search").value}`
 })
+// }

@@ -18,7 +18,7 @@ ${toolbar()}
         <div class="details">
         ${v.map((v,i) => {
         return `<img src=${v.Images[i].url_570xN}>
-                    <p>${v.title}</p>
+                    <p class="desc_title">${v.title}</p>
                     <p>${v.description}</p> 
             </a>`}).join('') }
             </div>`

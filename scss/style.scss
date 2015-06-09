@@ -117,20 +117,20 @@ body {
 
 .search {
     float: right;
-  position: relative;
-  margin-top: 23px;
-  border-right: 0px;
-  border: 1px solid grey;
+    position: relative;
+    margin-top: 23px;
+    border-right: 0px;
+    border: 1px solid grey;
 }
 
 .submit {
-      margin-right: 10%;
-  margin-left: 0px;
-  height: 26px;
-  background-color: #3F98BB;
-  border: 0px;
-  color: white;
-  border-left: 0px;
+    margin-right: 10%;
+    margin-left: 0px;
+    height: 26px;
+    background-color: #3F98BB;
+    border: 0px;
+    color: white;
+    border-left: 0px;
 }
 
 a {
@@ -149,7 +149,14 @@ img {
     margin-bottom: 0px;
 }
 
-.details{
+.details {
     border: 1px solid black;
     margin: 10%;
+}
+
+.desc_title {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    float: left;
 }
