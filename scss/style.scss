@@ -102,25 +102,54 @@ input {
     float: right;
     position: relative;
     margin-top: 23px;
-    width: 275px;
-    height: 26px;
 }
 
 .logo {
     position: absolute;
     margin-left: 10%;
     margin-top: 23px;
+    box-shadow: none;
 }
 
 body {
     background-color: #F5F5F1;
 }
 
-.search{
-    margin-right: 0px;
+.search {
+    float: right;
+  position: relative;
+  margin-top: 23px;
+  border-right: 0px;
+  border: 1px solid grey;
 }
 
-.submit{
-    margin-right: 10%;
-    margin-left: -1px;
+.submit {
+      margin-right: 10%;
+  margin-left: 0px;
+  height: 26px;
+  background-color: #3F98BB;
+  border: 0px;
+  color: white;
+  border-left: 0px;
+}
+
+a {
+    max-width: 250px;
+    height: 250px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px grey;
+}
+
+img {
+    width: 231px;
+    height: 196px;
+    margin: 8px;
+    margin-bottom: 0px;
+}
+
+.details{
+    border: 1px solid black;
+    margin: 10%;
 }
