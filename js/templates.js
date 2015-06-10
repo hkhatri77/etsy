@@ -33,7 +33,7 @@ ${toolbar()}
                     		<pre>$${v.price} <span>USD</span></pre>
                     		<pre>only ${v.quantity} available</pre>
                     		<h6>Overview</h6>
-                    		<pre>Who Made me: ${v.who_made}</pre>
+                    		<pre>Who Made: ${v.who_made}</pre>
                     		<pre>Materials: ${v.materials}</pre>
                     		<input type="submit" class="atc" value="Add to Cart">
                     	</div>
