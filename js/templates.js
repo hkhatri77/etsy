@@ -38,11 +38,12 @@ ${toolbar()}
                     		<input type="submit" class="atc" value="Add to Cart">
                     	</div>
                     </div>
-                    <div class="bluepart">
-                    </div>
+                    	<div class="bluepart"></div>
                     <div class="desc_cont">
                     	<p class="det_desc">${v.description}</p>
               		</div>
+                    </div>
+                    
             </a>`}).join('') }
             </div>`
 
