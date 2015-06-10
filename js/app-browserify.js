@@ -17,26 +17,33 @@ var EtsyRouter = Backbone.Router.extend({
 	routes: {
 		'listings/:id': 'details',
 		'search/:keywords': 'search',
-		'*default':'home'
+		'*default':'home',
+		'shops/:id': 'shops'
 	},
 	home: function(){
 
 		api.getShowEtsyListing().then((json)=> {
-		document.body.innerHTML= templates.home(json.results)
+		document.body.innerHTML = templates.home(json.results)
 		})
 	},
 	details:function(id){
 		api.getListing(id).then((json)=>{
 		var v = json.results
 		document.body.innerHTML = templates.details(v) 
-	})
-},
-search: function(keywords) {
-	api.getSearch(keywords).then((keywords)=> {
-	document.body.innerHTML=templates.home(keywords.results)
-})
+		})
+	},
+	search: function(keywords) {
+		api.getSearch(keywords).then((keywords)=> {
+		document.body.innerHTML = templates.home(keywords.results)
+		})
+	},
 
-},
+	// shops: function() {
+	// 	api.getShopListing().then((json) => {
+	// 	//	document.body.innerHTML = templates.shops(json.results)
+	// 	})
+	// },	
+	
 	initialize:function(){
 		Backbone.history.start()
 
